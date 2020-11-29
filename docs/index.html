@@ -57,7 +57,7 @@
 
                         --
 
-                        ![pla 6 dies](./imatges/pla_6_dies.png)
+                        ![pla 6 dies](./imatges/6_dies.svg)
 
                         --
 
@@ -65,6 +65,11 @@
 
                         - [Presentació Curs (Dani Herrera)](https://ctrl-alt-d.github.io/CursGitUdG/)
                         - [Presentació Git (Xavi Sala)](https://docs.google.com/presentation/d/1bQVdn7bqAZTMb9ZZ25GLedjDtINPH_xxRLnao1fOn4g/edit#slide=id.p)
+
+                        ~ 
+                        ##### Intro
+
+                        [LA HE LIADO PARDA, versión PIWEEK de Kaleidos](https://vimeo.com/82408340) <!-- .element style="font-size:50%;" -->
                         
                     </script>
                 </section>
@@ -72,8 +77,16 @@
 
                 <section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$">
                     <script type="text/template">
-                        ## Dia 0
-                        "Hello world"
+                        ## Dia 0 "Hello world"                        
+                        ![Octocat](./imatges/Octocat.png)
+
+                        --
+
+                        ## Conceptes que necessito conèixer
+                        * Què és un "Repo"
+                        * Repo local vs repo remot
+                        * Què és git
+                        * Què és github
 
                         --
 
@@ -90,33 +103,32 @@
                         ## Comprovar git configurat
                         ```bash
                         $ cat ~/.gitconfig
-                        $ git config --global user.name "John Doe"
-                        $ git config --global user.email johndoe@example.com
-                        $ git config --global core.editor Code.exe
+                        $ git config --list
+                        $ # git config --global user.name "John Doe"
+                        $ # git config --global user.email johndoe@example.com
+                        $ # git config --global core.editor Code.exe
                         ````
 
                         --
 
                         ## Pràctiques:
-                        * P0: Crear clau ssh ![](./imatges/yt.png)<!-- .element style="margin:0" -->
-                        * P1: El meu repo I ![](./imatges/yt.png)<!-- .element style="margin:0" -->
-                        * P2: El meu repo II
-                        * P3: El repo del company
-                        * P4: Esborrar-ho tot
-                        * P5: (Opcional) Ampliació ![](./imatges/yt.png)<!-- .element style="margin:0" -->
+                        * Dia0.P0: Crear clau ssh ![](./imatges/yt.png)<!-- .element style="margin:0" -->
+                        * Dia0.P1: El meu repo I ![](./imatges/yt.png)<!-- .element style="margin:0" -->
+                        * Dia0.P2: El meu repo II
+                        * Dia0.P3: El repo del company
+                        * Dia0.P4: Esborrar-ho tot
+                        * Dia0.P5: (Opcional) Ampliació ![](./imatges/yt.png)<!-- .element style="margin:0" -->
                         
-                        _(*) Amb vídeo d'ajuda_
-
                         --
 
-                        ## P0: Crear clau ssh
+                        ## Dia0.P0: Crear clau ssh
                         * [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
                         * [Adding a new SSH key to your GitHub account](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
-                        * [Video d'ajuda](https://youtu.be/OHy3eN6jPtQ)
+                        * [Video d'ajuda ![](./imatges/yt.png)<!-- .element style="margin:0" -->](https://youtu.be/OHy3eN6jPtQ)
 
                         --
 
-                        ## P1: El meu repo I
+                        ## Dia0.P1: El meu repo I
                         * Crear un repo a github
                         * Clonar-lo en local: `git clone`
                         * Afegir un fitxer de texte, ex: llegeixme.md
@@ -129,27 +141,27 @@
 
                         --
 
-                        ## P2: El meu repo II
+                        ## Dia0.P2: El meu repo II
                         * Passar-li la url del repo de github al company via teams per a que el cloni ell.
                         * Repetir la pràctica amb un segon repo.
                         * Clonar el primer repo en alguna altra carpeta per veure que no heu perdut res.
-                        
 
                         --
 
-                        ## P3: El repo del company
+                        ## Dia0.P3: El repo del company
                         * Clonar el repo d'un company.
                         * Comprovar que si intento fer push de canvis no em deixa.
 
                         --
 
-                        ## P4: Esborrar-ho tot
+                        ## Dia0.P4: Esborrar-ho tot
                         * Esborrar els repos de github.                        
 
                         --
 
-                        ## P5: Amplicació
+                        ## Dia0.P5: Amplicació
                         * Fer la pràctica usant l'editor VS Code
+                        * Fer la pràctica creant el repo en local
                         * [Video explcatiu ![](./imatges/yt.png)<!-- .element style="margin:0" -->](https://youtu.be/GBlf7WouCA8)
 
                         --
@@ -165,50 +177,136 @@
 
                 <section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$">
                     <script type="text/template">
-                        ## Dia 1
-                        coming soon
+                        ## Dia 1 "Branques"
+                        ![git branches](./imatges/git_branches_meme.jpg)
 
                         --
+
+                        ## Conceptes que necessito conèixer
+                        * Què és una "Branca"
+                        * Què és un col·laborador a GitHub
+                        * Què és un "Merge"
+                        
+                        --
+
+                        ## Pràctiques
+                        * Dia1.P0: Crear un repo amb un fitxeret a dins i afegir-hi col·laboradors.
+                        * Dia1.P1: Acceptar ser col·laborador al menys en 2 repos de companys.
+                        * Dia1.P2: Clonar els repos dels comanys, crear branca, afegir fitxer de texte, fer push.
+                        * Dia1.P3: Anar al "meu" repo a github i mirar les noves branques i network. Fer pull, switch.
+                        * Dia1.P4: Fer merge de les branques dels companys al meu repo. Mirar network.
+                        * Dia1.P5: Esborrar les branques. Esborrar el repo.
+                        
+                        --
+
+                        Més material [coming soon](https://github.com/ctrl-alt-d/CursGitUdG/tree/dia1)
+
 
                     </script>
                 </section>
 
                 <section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$">
                     <script type="text/template">
-                        ## Dia 2
-                        coming soon
+                        ## Dia 2 "PR"
+                        ![git merge](./imatges/merge_meme.gif)
 
                         --
+
+                        ## Conceptes que necessito conèixer
+                        * Què és una "Issue"
+                        * Què és una "PR"
+
+                        --
+
+                        ## Pràctiques                        
+                        * Dia2.P0: Repetir Dia1.P0: Crear un repo amb un fitxeret a dins i afegir-hi col·laboradors.
+                        * Dia2.P1: Repetir Dia1.P1: Acceptar ser col·laborador al menys en 2 repos de companys.
+                        * Dia2.P2: Repetir Dia1.P2: Clonar els repos dels comanys, crear branca, afegir fitxer de texte, fer push.
+                        * Dia2.P3: Obrir PR de les meves branques als repos dels companys.
+                        * Dia2.P4: Acceptar les PR amb Merge o Squash and Merge.
+                        * Dia2.P5: Esborrar les branques. Esborrar el repo.
+
+                        --
+
+                        Més material [coming soon](https://github.com/ctrl-alt-d/CursGitUdG/tree/dia2)
+
 
                     </script>
                 </section>
 
                 <section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$">
                     <script type="text/template">
-                        ## Dia 3
-                        coming soon
+                        ## Dia 3 "Reviews"
+                        Reviews and issues
 
                         --
+
+                        ## Conceptes que necessito conèixer
+                        * Què és una issue
+                        * Què és una review
+
+                        --
+
+                        ## Pràctiques
+                        Dia3.P0: Crear repo amb fitxerets de text a dins. Crear-hi 6 issues.
+                        Dia3.P1: Enviar sol·licituds de col·laboració.
+                        Dia3.P2: Acceptar sol·licituds de col·laboració, pillar 2 issues per repo, fer PRs de les issues.
+                        Dia3.P3: Revisar PRs al meu repo, demanar canvis.
+                        Dia3.P4: Revisar si m'han demanat canvis de les meves PRs, fer-los i demanar revisió de nou.
+                        Dia3.P5: Revisar PRs al meu repo, fer els merges.
+                        Dia3.P6: Esborrar repos.
+
+                        --
+
+                        Més material [coming soon](https://github.com/ctrl-alt-d/CursGitUdG/tree/dia3)
 
                     </script>
                 </section>
 
                 <section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$">
                     <script type="text/template">
-                        ## Dia 4
-                        coming soon
+                        ## Dia 4 "GitFlow"
+                        Git Flow
 
                         --
+
+                        ## Conceptes que necessito conèixer
+                        * Què és gitflow
+                        * Esquema de treball de gitflow
+
+                        --
+
+                        ## Pràctiques
+                        * Farem les mateixes pràctiques del dia 3 però amb gitflow.
+
+                        --
+
+                        Més material [coming soon](https://github.com/ctrl-alt-d/CursGitUdG/tree/dia4)
 
                     </script>
                 </section>
 
                 <section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$">
                     <script type="text/template">
-                        ## Dia 5
-                        coming soon
+                        ## Dia 5 "Git a VS"
+                        Visual studio
 
                         --
+
+                        ## Conceptes que necessito conèixer
+                        * Què es .Net5
+                        * Què és Visual Studio
+                        * Què és un conflicte
+                        * Què és la integració de Git amb Slack o Teams.
+
+                        ---
+
+                        ## Pràctiques
+                        * Farem les mateixes pràctiques del dia 3 però amb VisualStudio.
+
+                        ---
+
+                        Més material [coming soon](https://github.com/ctrl-alt-d/CursGitUdG/tree/dia5)
 
                     </script>
                 </section>
